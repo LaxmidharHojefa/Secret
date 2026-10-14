@@ -29,7 +29,7 @@ export default function MusicPlayer({ isPlaying, toggle }: Props) {
         padding: '10px 16px', transition: 'all 0.3s ease',
       }}
     >
-      <audio ref={audioRef} src="/audio/our-song.mp3" preload="none" />
+      <audio ref={audioRef} src="/audio/Mane-Malje-From-Fakt-Purusho-Maate-.mp3" preload="none" />
 
       <button
         onClick={toggle}
@@ -48,7 +48,7 @@ export default function MusicPlayer({ isPlaying, toggle }: Props) {
       {isPlaying && (
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ fontSize: '11px', color: '#ff85b3', fontFamily: 'Inter, sans-serif' }}>
-            {hasFile ? 'Our Song ♫' : 'Add music ♫'}
+            {hasFile ? 'Mane Malje ♫' : 'Add music ♫'}
           </span>
           <input
             type="range" min={0} max={1} step={0.05} value={volume}
